@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Procurement Intelligence</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- HEADER -->
+
+        <header class="header">
+
+            <div>
+
+                <h1>
+                    Procurement Intelligence
+                </h1>
+
+                <p>
+                    AI-powered vendor analytics
+                </p>
+
+            </div>
+
+            <div class="status">
+
+                <span class="status-dot"></span>
+
+                AI Online
+
+            </div>
+
+        </header>
+
+
+        <!-- CHAT AREA -->
+
+        <main
+            id="chat"
+            class="chat"
+        >
+
+            <div class="welcome">
+
+                <h2>
+                    Ask anything about your vendors
+                </h2>
+
+                <p>
+                    Ask questions about pricing,
+                    delivery, support, negotiation,
+                    and vendor performance.
+                </p>
+
+
+                <div class="examples">
+
+                    <button
+                        onclick="useExample(this)"
+                    >
+                        Which vendors have delivery above 95%?
+                    </button>
+
+                    <button
+                        onclick="useExample(this)"
+                    >
+                        Which vendor offers the cheapest laptop?
+                    </button>
+
+                    <button
+                        onclick="useExample(this)"
+                    >
+                        Show the top 5 vendors by support quality.
+                    </button>
+
+                </div>
+
+            </div>
+
+        </main>
+
+
+        <!-- INPUT -->
+
+        <footer class="input-area">
+
+            <div class="input-container">
+
+                <textarea
+                    id="question"
+                    placeholder="Ask about your vendors..."
+                    rows="1"
+                ></textarea>
+
+                <button
+                    id="askButton"
+                    onclick="askQuestion()"
+                >
+                    Ask
+                </button>
+
+            </div>
+
+            <p class="hint">
+                AI-generated results should be verified
+                before making business decisions.
+            </p>
+
+        </footer>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
